@@ -22,8 +22,8 @@ class User {
   @Column()
   password: string;
 
-  @Column({ type: "integer" })
-  phone: number;
+  @Column({ type: "varchar", length: 25 })
+  phone: string;
 
   @CreateDateColumn()
   createdAt?: Date;

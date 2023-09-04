@@ -19,8 +19,8 @@ class Contact {
   @Column({ type: "varchar", length: 150, unique: true })
   email: string;
 
-  @Column({ type: "integer" })
-  phone: number;
+  @Column({ type: "varchar", length: 25 })
+  phone: string;
 
   @CreateDateColumn()
   createdAt?: Date;
